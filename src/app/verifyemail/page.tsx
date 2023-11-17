@@ -18,14 +18,14 @@ const VerifyEmailPage = () => {
     useEffect(()=>{
       const urlToken = window.location.search.split("=")[1];
       setToken(urlToken)
-    });
+    },[]);
 
     useEffect(()=>{
         if(token.length > 0 || ''){
             verifyEmail()
             isVerified(true);
         }
-    },[token])
+    },[token,verifyEmail])
   return (
     <div className='flex felx-col items-center justify-center min-h-screen py-2'>
       <h1 className='text-4xl'>Verify Email</h1>
