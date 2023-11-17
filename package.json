@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "18.15.0"
+  },
   "dependencies": {
     "axios": "^1.5.1",
     "bcrypt": "^5.1.1",
