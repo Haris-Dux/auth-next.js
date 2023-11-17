@@ -25,7 +25,7 @@ const VerifyEmailPage = () => {
             verifyEmail()
             isVerified(true);
         }
-    },[token,verifyEmail])
+    },[token])
   return (
     <div className='flex felx-col items-center justify-center min-h-screen py-2'>
       <h1 className='text-4xl'>Verify Email</h1>
